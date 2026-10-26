@@ -40,6 +40,7 @@ def load_config(file_path, cfg=dict()):
 
             if not base_yaml.startswith("/"):
                 base_yaml = os.path.join(os.path.dirname(file_path), base_yaml)
+            base_yaml = os.path.normpath(base_yaml)
 
             with open(base_yaml) as f:
                 base_cfg = load_config(base_yaml, cfg)

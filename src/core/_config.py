@@ -12,7 +12,10 @@ from torch.cuda.amp.grad_scaler import GradScaler
 from torch.optim import Optimizer
 from torch.optim.lr_scheduler import LRScheduler
 from torch.utils.data import DataLoader, Dataset
-from torch.utils.tensorboard import SummaryWriter
+try:
+    from torch.utils.tensorboard import SummaryWriter
+except (ImportError, AttributeError):
+    SummaryWriter = object
 
 __all__ = [
     "BaseConfig",

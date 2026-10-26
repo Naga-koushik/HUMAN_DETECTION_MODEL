@@ -223,7 +223,7 @@ def main() -> None:
     parser.add_argument(
         "-c",
         "--config",
-        default=r"configs\dfine\custom\dfine_hgnetv2_s_custom.yml",
+        default="configs/dfine/custom/dfine_hgnetv2_s_custom.yml",
         help="D-FINE YAML config.",
     )
     parser.add_argument(
