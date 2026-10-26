@@ -1,0 +1,5 @@
+PyYAML
+scipy
+loguru
+tensorboard
+opencv-python
