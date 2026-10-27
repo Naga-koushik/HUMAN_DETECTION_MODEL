@@ -1,3 +1,3 @@
-"""Register model components without importing training datasets."""
+"""Inference-only D-FINE package."""
 
-from . import nn, optim, zoo
+from . import nn, zoo
